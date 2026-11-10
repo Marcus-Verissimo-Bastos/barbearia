@@ -1,0 +1,16 @@
+{
+  "name": "barbearia",
+  "version": "1.0.0",
+  "description": "Agendamento de barbearia simples com Node.js e Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

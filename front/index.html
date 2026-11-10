@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia - Agendamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✂ Barbearia</h1>
+    <p>Agende seu horário</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Novo agendamento</h2>
+      <form id="form">
+        <label>Nome
+          <input id="nome" type="text" maxlength="60" required>
+        </label>
+
+        <label>Telefone
+          <input id="telefone" type="tel" maxlength="20" placeholder="(48) 99999-9999" required>
+        </label>
+
+        <label>Serviço
+          <select id="servico" required></select>
+        </label>
+
+        <label>Barbeiro
+          <select id="barbeiro" required></select>
+        </label>
+
+        <div class="linha">
+          <label>Data
+            <input id="data" type="date" required>
+          </label>
+          <label>Horário
+            <select id="hora" required></select>
+          </label>
+        </div>
+
+        <button type="submit">Agendar</button>
+        <p id="msg" class="msg" hidden></p>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Agendamentos</h2>
+      <ul id="lista"></ul>
+      <p id="vazio" class="vazio" hidden>Nenhum agendamento ainda.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
